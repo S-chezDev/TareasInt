@@ -442,6 +442,9 @@ select {
   width: 80%;
   max-width: 920px;
   justify-self: center;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.84) 34%, rgba(255, 255, 255, 0.72) 100%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, transparent 44%, rgba(255, 255, 255, 0.06) 100%);
 }
 
 .task-card.priority-baja {
@@ -460,56 +463,58 @@ select {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), transparent 52%);
+  background:
+    linear-gradient(140deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.04) 28%, transparent 68%),
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.22), transparent 42%);
   pointer-events: none;
 }
 
 .task-card::after {
   content: '';
   position: absolute;
-  top: -22px;
-  right: -22px;
-  width: 92px;
-  height: 92px;
+  top: -34px;
+  right: -34px;
+  width: 132px;
+  height: 132px;
   border-radius: 999px;
-  opacity: 0.28;
-  filter: blur(8px);
+  opacity: 0.18;
+  filter: blur(14px);
   pointer-events: none;
 }
 
 .task-card.state-pendiente {
   background:
-    linear-gradient(180deg, rgba(31, 111, 120, 0.11), rgba(255, 255, 255, 0.84)),
-    linear-gradient(135deg, rgba(31, 111, 120, 0.08), transparent 60%);
+    linear-gradient(180deg, rgba(31, 111, 120, 0.14) 0%, rgba(31, 111, 120, 0.08) 28%, rgba(255, 255, 255, 0.88) 100%),
+    linear-gradient(135deg, rgba(31, 111, 120, 0.12) 0%, rgba(31, 111, 120, 0.04) 38%, transparent 78%);
 }
 
 .task-card.state-pendiente::after {
-  background: rgba(31, 111, 120, 0.65);
+  background: rgba(31, 111, 120, 0.52);
 }
 
 .task-card.state-completada {
   background:
-    linear-gradient(180deg, rgba(47, 143, 91, 0.11), rgba(255, 255, 255, 0.84)),
-    linear-gradient(135deg, rgba(47, 143, 91, 0.08), transparent 60%);
+    linear-gradient(180deg, rgba(47, 143, 91, 0.14) 0%, rgba(47, 143, 91, 0.08) 28%, rgba(255, 255, 255, 0.88) 100%),
+    linear-gradient(135deg, rgba(47, 143, 91, 0.12) 0%, rgba(47, 143, 91, 0.04) 38%, transparent 78%);
 }
 
 .task-card.state-completada::after {
-  background: rgba(47, 143, 91, 0.65);
+  background: rgba(47, 143, 91, 0.5);
 }
 
 .task-card.state-cancelada {
   background:
-    linear-gradient(180deg, rgba(178, 58, 72, 0.12), rgba(255, 255, 255, 0.84)),
-    linear-gradient(135deg, rgba(178, 58, 72, 0.1), transparent 60%);
+    linear-gradient(180deg, rgba(178, 58, 72, 0.15) 0%, rgba(178, 58, 72, 0.08) 28%, rgba(255, 255, 255, 0.88) 100%),
+    linear-gradient(135deg, rgba(178, 58, 72, 0.12) 0%, rgba(178, 58, 72, 0.04) 38%, transparent 78%);
 }
 
 .task-card.state-cancelada::after {
-  background: rgba(178, 58, 72, 0.72);
+  background: rgba(178, 58, 72, 0.56);
 }
 
 .task-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 20px 44px rgba(37, 28, 21, 0.18);
+  box-shadow: 0 22px 54px rgba(37, 28, 21, 0.15);
 }
 
 .task-card-main h1,
