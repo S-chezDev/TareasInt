@@ -1,4 +1,5 @@
-const API_URL = '/api/tareas';
+const API_BASE_URL = (import.meta.env.VITE_API_URL || 'http://tareaspremi.us-east-2.elasticbeanstalk.com').replace(/\/$/, '');
+const API_URL = `${API_BASE_URL}/api/tareas`;
 
 async function request(path = '', options = {}) {
   const response = await fetch(`${API_URL}${path}`, {
